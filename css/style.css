@@ -1,0 +1,38 @@
+/*! The main stylesheet for the Sedona project */
+
+@charset "UTF-8";
+
+/* Apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  min-width: 1250px;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #000;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.first-heading {
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+.second-heading {
+  font-size: 21px;
+  line-height: 1.23809524;
+}
