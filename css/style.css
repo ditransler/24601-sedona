@@ -13,7 +13,7 @@ html {
 
 html, body {
   margin: 0;
-  min-width: 1250px;
+  min-width: 1200px;
   padding: 0;
 }
 
@@ -27,6 +27,15 @@ body {
   text-transform: uppercase;
 }
 
+.wrapper {
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
+}
+
+
 .first-heading {
   font-size: 30px;
   line-height: 0.8;
@@ -35,4 +44,187 @@ body {
 .second-heading {
   font-size: 21px;
   line-height: 1.23809524;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.main-header {
+  min-height: 564px;
+}
+
+.inner-page .main-header {
+  min-height: 56px;
+}
+
+.main-navigation {
+  background-color: #fff;
+  min-height: 56px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  min-height: 120px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-hashtag,
+.footer-social,
+.footer-copyright {
+  flex: none;
+  width: 33.3333333%;
+}
+
+/* ==========================================================================
+   Index page
+   ========================================================================== */
+
+/* *************** Welcome *************** */
+.welcome {
+  background-color: #a9b8c3;
+  margin-bottom: 60px;
+  min-height: 508px;
+  text-align: center;
+}
+
+.reasons-header {
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+/* *************** Reasons *************** */
+.reasons {
+  margin-bottom: 53px;
+  min-height: 1306px;
+}
+
+.reasons-large-item {
+  display: flex;
+}
+
+.reasons-item-description {
+  background-color: #81b3d2;
+  color: #fff;
+  flex: none;
+  width: 33.3333333%;
+}
+
+.reasons-item-image {
+  flex: none;
+  overflow: hidden;
+  width: 66.6666666%;
+}
+
+.reasons-item-image > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* *************** Features *************** */
+.features {
+  display: flex;
+}
+
+.features-item {
+  flex: none;
+  min-height: 330px;
+  width: 33.3333333%;
+}
+
+.reasons-row {
+  background-color: #eee;
+  display: flex;
+  min-height: 256px;
+}
+
+.reasons-item {
+  flex: none;
+  width: 33.3333333%;
+}
+
+/* *************** Hotel-search *************** */
+.hotel-search {
+  margin-bottom: -120px;
+  min-height: 884px;
+}
+
+.hotel-search-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.hotel-search-form {
+  margin: 0 auto;
+  position: relative;
+  width: 568px;
+}
+
+.hotel-search-form-toggle {
+  background-color: #766357;
+  min-height: 86px;
+  margin: 0;
+}
+
+.hotel-search-form-content {
+  background-color: #fff;
+  left: 0;
+  min-height: 395px;
+  position: absolute;
+  top: 86px;
+  width: 100%;
+}
+
+.hotel-search-map {
+  height: 593px;
+  width: 100%;
+}
+
+.hotel-search-map > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Hotels page
+   ========================================================================== */
+
+/* *************** Hotels-filter *************** */
+.hotels-filter {
+  background-color: #a9b8c3;
+  color: #fff;
+  min-height: 217px;
+}
+
+.hotels-filter-form {
+  display: flex;
+}
+
+.infrastructure,
+.housing-type {
+  flex: none;
+  width: 255px;
+}
+
+.daily-cost {
+  flex: none;
+  margin-left: auto;
+  width: 318px;
+}
+
+/* *************** Hotels-results *************** */
+.hotels-results-header {
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 86px;
+}
+
+.hotel-item {
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 150px;
 }
