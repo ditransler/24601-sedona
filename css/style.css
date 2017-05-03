@@ -240,6 +240,7 @@ body {
   position: absolute;
   top: 0;
   width: 138px;
+  z-index: 1;
 }
 
 .main-logo > img {
@@ -374,10 +375,34 @@ body {
 
 /* *************** Welcome *************** */
 .welcome {
-  background-color: #a9b8c3;
-  margin-bottom: 60px;
-  min-height: 508px;
+  background: #a9b8c3 url("../img/welcome-bg.jpg") no-repeat;
+  height: 508px;
+  padding-top: 76px;
+  position: relative;
   text-align: center;
+}
+
+.welcome::after {
+  background: transparent url("../img/welcome-mask.png") no-repeat;
+  bottom: 0;
+  content: "";
+  height: 57px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.welcome h1 {
+  font-size: 0;
+  height: 352px;
+  margin: 0 auto;
+  width: 458px;
+}
+
+.welcome img {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .reasons-header {
