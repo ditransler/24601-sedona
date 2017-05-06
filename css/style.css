@@ -645,31 +645,6 @@ body {
   margin-bottom: 29px;
 }
 
-.hotel-search-form-content .btn-submit {
-  background-color: #81b3d2;
-  border: none;
-  color: #fff;
-  display: block;
-  font-family: "PT Sans", Helvetica, sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1.23809524;
-  margin-top: 54px;
-  padding: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.hotel-search-form-content .btn-submit:hover {
-  background-color: #669ec0;
-}
-
-.hotel-search-form-content .btn-submit:active {
-  background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
-}
-
 .hotel-search-form-content .label {
   font-weight: 700;
 }
@@ -694,15 +669,15 @@ body {
   outline: 0;
 }
 
+.hotel-search-form-content .datepicker {
+  position: relative;
+  width: 346px;
+}
+
 .hotel-search-form-content .input-datepicker {
   padding: 6px 13px;
   padding-right: 30px;
   width: 100%;
-}
-
-.hotel-search-form-content .datepicker {
-  position: relative;
-  width: 346px;
 }
 
 .btn-datepicker {
@@ -778,6 +753,31 @@ body {
 
 .plus-minus-count > .btn-plus::after {
   transform: translate(-50%, -50%) rotate(90deg) ;
+}
+
+.hotel-search-form-content .btn-submit {
+  background-color: #81b3d2;
+  border: none;
+  color: #fff;
+  display: block;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.23809524;
+  margin-top: 54px;
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.hotel-search-form-content .btn-submit:hover {
+  background-color: #669ec0;
+}
+
+.hotel-search-form-content .btn-submit:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-search-map {
