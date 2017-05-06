@@ -147,7 +147,6 @@ body {
   max-width: 1200px;
 }
 
-
 .first-heading {
   font-size: 30px;
   line-height: 0.8;
@@ -156,6 +155,19 @@ body {
 .second-heading {
   font-size: 21px;
   line-height: 1.23809524;
+}
+
+.btn {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: center;
+  text-decoration: none;
+  text-transform: inherit;
 }
 
 /* ==========================================================================
@@ -286,7 +298,7 @@ body {
   font-size: 0;
 }
 
-.social-btn {
+.btn-social {
   background: #81b3d2;
   display: inline-block;
   height: 48px;
@@ -296,19 +308,19 @@ body {
   width: 46px;
 }
 
-.social-btn:last-child {
+.btn-social:last-child {
   margin-right: 0;
 }
 
-.social-btn:hover {
+.btn-social:hover {
   background-color: #669ec0;
 }
 
-.social-btn:active {
+.btn-social:active {
   background-color: #5496bd;
 }
 
-.social-btn::before {
+.btn-social::before {
   background: transparent url("../img/sprite.png") no-repeat;
   content: "";
   left: 50%;
@@ -317,23 +329,23 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.social-btn:active::before {
+.btn-social:active::before {
   opacity: 0.3;
 }
 
-.social-btn-tw::before {
+.btn-social-tw::before {
   background-position: -5px -173px;
   height: 15px;
   width: 17px;
 }
 
-.social-btn-fb::before {
+.btn-social-fb::before {
   background-position: -196px -5px;
   height: 19px;
   width: 10px;
 }
 
-.social-btn-yt::before {
+.btn-social-yt::before {
   background-position: -32px -173px;
   height: 16px;
   width: 20px;
@@ -592,21 +604,16 @@ body {
 
 .hotel-search-form-toggle {
   margin: 0;
-  text-align: center;
 }
 
 .hotel-search-form-toggle > .btn {
   background-color: #766357;
-  border: none;
   color: #fff;
   display: block;
-  font-family: "PT Sans", Helvetica, sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 1.23809524;
-  outline: none;
   padding: 30px 0;
-  text-transform: uppercase;
   width: 100%;
 }
 
@@ -701,12 +708,10 @@ body {
 .btn-datepicker {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -128px -54px;
-  border: none;
   color: transparent;
   font-size: 0;
   height: 22px;
   margin: 0;
-  outline: none;
   padding: 0;
   position: absolute;
   width: 21px;
@@ -743,7 +748,6 @@ body {
 
 .plus-minus-count > .btn {
   background-color: #f2f2f2;
-  border: 0;
   color: #a9a9a9;
   height: 38px;
   font-size: 0;
