@@ -173,10 +173,6 @@ body {
 /* ==========================================================================
    Header
    ========================================================================== */
-.main-header {
-  min-height: 564px;
-}
-
 .inner-page .main-header {
   min-height: 56px;
 }
@@ -199,7 +195,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.85714286;
-  padding: 14px 0 15px;
+  padding: 15px 0;
   vertical-align: baseline;
   width: 240px;
 }
@@ -470,13 +466,12 @@ body {
 .reasons-row {
   background-color: #eee;
   display: flex;
-  min-height: 256px;
 }
 
 .reasons-item {
   color: #333;
   flex: none;
-  padding: 48px 50px 57px;
+  padding: 50px 50px 58px;
   text-align: center;
   width: 33.3333333%;
 }
@@ -576,7 +571,6 @@ body {
 /* *************** Hotel-search *************** */
 .hotel-search {
   margin-bottom: -120px;
-  min-height: 884px;
 }
 
 .hotel-search-header {
@@ -630,7 +624,6 @@ body {
   background-color: #fff;
   box-shadow: 0 0 40px -5px #494848;
   left: 0;
-  min-height: 395px;
   padding: 55px;
   position: absolute;
   top: 86px;
@@ -764,7 +757,7 @@ body {
   font-size: 21px;
   font-weight: 700;
   line-height: 1.23809524;
-  margin-top: 54px;
+  margin-top: 55px;
   padding: 16px;
   text-align: center;
   text-transform: uppercase;
