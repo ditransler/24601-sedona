@@ -173,10 +173,6 @@ body {
 /* ==========================================================================
    Header
    ========================================================================== */
-.inner-page .main-header {
-  min-height: 56px;
-}
-
 .main-navigation {
   background-color: #fff;
   padding: 0;
@@ -238,6 +234,7 @@ body {
 .main-navigation-list .is-active {
   color: #766357;
   cursor: default;
+  pointer-events: none;
 }
 
 .main-logo {
@@ -790,7 +787,7 @@ body {
 
 /* *************** Hotels-filter *************** */
 .hotels-filter {
-  background-color: #a9b8c3;
+  background: #a9b8c3 url("../img/hotels-filter-bg.jpg") no-repeat;
   color: #fff;
   min-height: 217px;
 }

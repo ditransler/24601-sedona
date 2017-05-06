@@ -32,41 +32,41 @@
       <main class="main-content">
         <div class="hotels-filter">
           <form class="hotels-filter-form" action="/" method="get">
-            <fieldset class="infrastructure">
+            <fieldset class="hotels-filter-group infrastructure">
               <legend>Инфраструктура:</legend>
-              <ul>
-                <li>
+              <ul class="checkbox-list">
+                <li class="checkbox-item">
                   <input id="infrastructure-item-1" name="infrastructure[]" type="checkbox" value="Бассейн" checked>
                   <label for="infrastructure-item-1">Бассейн</label>
                 </li>
-                <li>
+                <li class="checkbox-item">
                   <input id="infrastructure-item-2" name="infrastructure[]" type="checkbox" value="Парковка">
                   <label for="infrastructure-item-2">Парковка</label>
                 </li>
-                <li>
+                <li class="checkbox-item">
                   <input id="infrastructure-item-3" name="infrastructure[]" type="checkbox" value="Wi-Fi">
                   <label for="infrastructure-item-3">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="housing-type">
+            <fieldset class="hotels-filter-group housing-type">
               <legend>Тип жилья:</legend>
-              <ul>
-                <li>
+              <ul class="checkbox-list">
+                <li class="checkbox-item">
                   <input id="housing-type-item-1" name="housing-type[]" type="checkbox" value="Гостиница" checked>
                   <label for="housing-type-item-1">Гостиница</label>
                 </li>
-                <li>
+                <li class="checkbox-item">
                   <input id="housing-type-item-2" name="housing-type[]" type="checkbox" value="Мотель" checked>
                   <label for="housing-type-item-2">Мотель</label>
                 </li>
-                <li>
+                <li class="checkbox-item">
                   <input id="housing-type-item-3" name="housing-type[]" type="checkbox" value="Апартаменты" checked>
                   <label for="housing-type-item-3">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="daily-cost">
+            <fieldset class="hotels-filter-group daily-cost">
               <legend>Стоимость в сутки (Р):</legend>
               <div class="daily-cost-range">
                 <div class="range-controls">
@@ -95,8 +95,8 @@
                 <li><a class="sorting-menu-item" href="#" title="Сортировать по типу">По типу</a></li>
                 <li><a class="sorting-menu-item" href="#" title="Сортировать по функционалу">По функционалу</a></li>
               </ul>
-              <a class="btn-sort btn-sort-up" href="#" title="Сортировать вверх">Вверх</a>
-              <a class="btn-sort btn-sort-down btn-active" href="#" title="Сортировать вниз">Вниз</a>
+              <a class="btn btn-sort btn-sort-up" href="#" title="Сортировать вверх">Вверх</a>
+              <a class="btn btn-sort btn-sort-down btn-active" href="#" title="Сортировать вниз">Вниз</a>
             </div>
           </div>
           <div class="hotels-results-output" id="hotels-results-output">
@@ -105,7 +105,7 @@
                 <img src="img/hotel-item-thumb-01.jpg" width="135" height="90" alt="Вид гостиницы Amara Resort &amp; Spa">
               </div>
               <div class="hotel-item-info">
-                <h1 class="hotel-item-name">Amara Resort &amp; Spa</h1>
+                <h1 class="hotel-item-name"><a href="#" title="Название гостиницы">Amara Resort &amp; Spa</a></h1>
                 <div class="hotel-item-text">
                   <p class="hotel-item-type">Гостиница</p>
                   <p class="hotel-item-start-cost">от 4000 р.</p>
@@ -130,7 +130,7 @@
                 <img src="img/hotel-item-thumb-02.jpg" width="135" height="90" alt="Вид гостиницы Desert Quail Inn">
               </div>
               <div class="hotel-item-info">
-                <h1 class="hotel-item-name">Desert Quail Inn</h1>
+                <h1 class="hotel-item-name"><a href="#" title="Название мотеля">Desert Quail Inn</a></h1>
                 <div class="hotel-item-text">
                   <p class="hotel-item-type">Мотель</p>
                   <p class="hotel-item-start-cost">от 3000 р.</p>
@@ -154,7 +154,7 @@
                 <img src="img/hotel-item-thumb-03.jpg" width="135" height="90" alt="Вид гостиницы Villas at Poco Diablo">
               </div>
               <div class="hotel-item-info">
-                <h1 class="hotel-item-name">Villas at Poco Diablo</h1>
+                <h1 class="hotel-item-name"><a href="#" title="Название апартаментов">Villas at Poco Diablo</a></h1>
                 <div class="hotel-item-text">
                   <p class="hotel-item-type">Апартаменты</p>
                   <p class="hotel-item-start-cost">от 2000 р.</p>
@@ -180,9 +180,9 @@
           <a href="#" title="Хэштег посетите Седону">#visitsedona</a>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#" title="Твиттер">Твиттер</a>
-          <a class="social-btn social-btn-fb" href="#" title="Фейсбук">Фейсбук</a>
-          <a class="social-btn social-btn-yt" href="#" title="Ютуб">Ютуб</a>
+          <a class="btn btn-social btn-social-tw" href="#" title="Твиттер">Твиттер</a>
+          <a class="btn btn-social btn-social-fb" href="#" title="Фейсбук">Фейсбук</a>
+          <a class="btn btn-social btn-social-yt" href="#" title="Ютуб">Ютуб</a>
         </section>
         <section class="footer-copyright">
           <p>Website by:</p>
