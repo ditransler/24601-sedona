@@ -790,10 +790,17 @@ body {
   background: #a9b8c3 url("../img/hotels-filter-bg.jpg") no-repeat;
   color: #fff;
   min-height: 217px;
+  padding: 22px 72px 32px;
 }
 
 .hotels-filter-form {
   display: flex;
+}
+
+.hotels-filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .infrastructure,
@@ -806,6 +813,152 @@ body {
   flex: none;
   margin-left: auto;
   width: 318px;
+}
+
+.hotels-filter-group .title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3125;
+  margin-bottom: 10px;
+}
+
+.hotels-filter-group .checkbox-list {
+  list-style: none;
+  margin: 17px 0 0;
+  padding: 0;
+}
+
+.hotels-filter-group .checkbox-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.hotels-filter-checkbox-input {
+  display: none;
+}
+
+.hotels-filter-checkbox-label {
+  padding-left: 41px;
+  position: relative;
+}
+
+.hotels-filter-checkbox-label::before {
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -5px -5px;
+  content: "";
+  height: 22px;
+  left: 0;
+  margin-top: -11px;
+  position: absolute;
+  top: 50%;
+  width: 22px;
+}
+
+.hotels-filter-checkbox-input:checked + .hotels-filter-checkbox-label::before {
+  background-position: -37px -5px;
+  width: 26px;
+}
+
+.hotels-filter-checkbox-input:disabled + .hotels-filter-checkbox-label {
+  opacity: 0.4;
+}
+
+.hotels-filter-group .daily-cost-range {
+  margin-bottom: 24px;
+}
+
+.daily-cost-range .range-controls {
+  border-radius: 2px;
+  border: 2px solid #fff;
+  display: flex;
+  height: 36px;
+  margin-bottom: 11px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.daily-cost-range .range-controls-label {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.daily-cost-range .range-controls-label:first-child {
+  border-right: 2px solid #fff;
+  padding-left: 65px;
+  width: 158px;
+}
+
+.daily-cost-range .range-controls-label:last-child {
+  padding-left: 52px;
+  width: 156px;
+}
+
+.daily-cost-range .range-controls-input {
+  background: none;
+  border: none;
+  color: inherit;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+}
+
+.daily-cost-range .range-slider {
+  height: 21px;
+  position: relative;
+}
+
+.daily-cost-range .range-slider-scale {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 2px;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.daily-cost-range .range-slider-bar {
+  background-color: #fff;
+  height: 100%;
+  width: 80%;
+}
+
+.daily-cost-range .range-slider-handle {
+  background: #ababab;
+  border: 9px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  height: 21px;
+  position: absolute;
+  top: 0;
+  width: 21px;
+}
+
+.daily-cost-range .range-slider-handle:hover {
+  background-color: #1c4f80;
+}
+
+.daily-cost-range .range-slider-handle-max {
+  left: 80%;
+}
+
+.hotels-filter-form .btn-submit {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  min-width: 137px;
+  padding: 6px 30px;
+}
+
+.hotels-filter-form .btn-submit:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /* *************** Hotels-results *************** */

@@ -33,45 +33,45 @@
         <div class="hotels-filter">
           <form class="hotels-filter-form" action="/" method="get">
             <fieldset class="hotels-filter-group infrastructure">
-              <legend>Инфраструктура:</legend>
+              <legend class="title">Инфраструктура:</legend>
               <ul class="checkbox-list">
                 <li class="checkbox-item">
-                  <input id="infrastructure-item-1" name="infrastructure[]" type="checkbox" value="Бассейн" checked>
-                  <label for="infrastructure-item-1">Бассейн</label>
+                  <input class="hotels-filter-checkbox-input" id="infrastructure-item-1" name="infrastructure[]" type="checkbox" value="Бассейн" checked>
+                  <label class="hotels-filter-checkbox-label" for="infrastructure-item-1">Бассейн</label>
                 </li>
                 <li class="checkbox-item">
-                  <input id="infrastructure-item-2" name="infrastructure[]" type="checkbox" value="Парковка">
-                  <label for="infrastructure-item-2">Парковка</label>
+                  <input class="hotels-filter-checkbox-input" id="infrastructure-item-2" name="infrastructure[]" type="checkbox" value="Парковка">
+                  <label class="hotels-filter-checkbox-label" for="infrastructure-item-2">Парковка</label>
                 </li>
                 <li class="checkbox-item">
-                  <input id="infrastructure-item-3" name="infrastructure[]" type="checkbox" value="Wi-Fi">
-                  <label for="infrastructure-item-3">Wi-Fi</label>
+                  <input class="hotels-filter-checkbox-input" id="infrastructure-item-3" name="infrastructure[]" type="checkbox" value="Wi-Fi">
+                  <label class="hotels-filter-checkbox-label" for="infrastructure-item-3">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="hotels-filter-group housing-type">
-              <legend>Тип жилья:</legend>
+              <legend class="title">Тип жилья:</legend>
               <ul class="checkbox-list">
                 <li class="checkbox-item">
-                  <input id="housing-type-item-1" name="housing-type[]" type="checkbox" value="Гостиница" checked>
-                  <label for="housing-type-item-1">Гостиница</label>
+                  <input class="hotels-filter-checkbox-input" id="housing-type-item-1" name="housing-type[]" type="checkbox" value="Гостиница" checked>
+                  <label class="hotels-filter-checkbox-label" for="housing-type-item-1">Гостиница</label>
                 </li>
                 <li class="checkbox-item">
-                  <input id="housing-type-item-2" name="housing-type[]" type="checkbox" value="Мотель" checked>
-                  <label for="housing-type-item-2">Мотель</label>
+                  <input class="hotels-filter-checkbox-input" id="housing-type-item-2" name="housing-type[]" type="checkbox" value="Мотель" checked>
+                  <label class="hotels-filter-checkbox-label" for="housing-type-item-2">Мотель</label>
                 </li>
                 <li class="checkbox-item">
-                  <input id="housing-type-item-3" name="housing-type[]" type="checkbox" value="Апартаменты" checked>
-                  <label for="housing-type-item-3">Апартаменты</label>
+                  <input class="hotels-filter-checkbox-input" id="housing-type-item-3" name="housing-type[]" type="checkbox" value="Апартаменты" checked>
+                  <label class="hotels-filter-checkbox-label" for="housing-type-item-3">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="hotels-filter-group daily-cost">
-              <legend>Стоимость в сутки (Р):</legend>
+              <legend class="title">Стоимость в сутки (Р):</legend>
               <div class="daily-cost-range">
                 <div class="range-controls">
-                  <label class="range-controls-label">От <input class="min-value" type="text" name="min-cost" value="0"></label>
-                  <label class="range-controls-label">До <input class="max-value" type="text" name="max-cost" value="3000"></label>
+                  <label class="range-controls-label">От <input class="range-controls-input" type="text" name="min-cost" value="0"></label>
+                  <label class="range-controls-label">До <input class="range-controls-input" type="text" name="max-cost" value="3000"></label>
                 </div>
                 <div class="range-slider">
                   <div class="range-slider-scale">
@@ -81,7 +81,7 @@
                   <div class="range-slider-handle range-slider-handle-max"></div>
                 </div>
               </div>
-              <button class="hotels-filter-submit" type="submit">Показать</button>
+              <button class="btn btn-submit" type="submit">Показать</button>
             </fieldset>
           </form>
         </div>
