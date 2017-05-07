@@ -828,12 +828,24 @@ body {
   padding: 0;
 }
 
+.hotels-filter-group .checkbox-item {
+  position: relative;
+}
+
 .hotels-filter-group .checkbox-item:not(:last-child) {
   margin-bottom: 24px;
 }
 
 .hotels-filter-checkbox-input {
-  display: none;
+  border: 0;
+  height: 22px;
+  margin: 0;
+  opacity: 0;
+  outline: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 22px;
 }
 
 .hotels-filter-checkbox-label {
@@ -857,6 +869,10 @@ body {
 .hotels-filter-checkbox-input:checked + .hotels-filter-checkbox-label::before {
   background-position: -37px -5px;
   width: 26px;
+}
+
+.hotels-filter-checkbox-input:focus + .hotels-filter-checkbox-label {
+  outline: 5px auto rgb(59, 153, 252); /* webkit default styles */
 }
 
 .hotels-filter-checkbox-input:disabled + .hotels-filter-checkbox-label {
