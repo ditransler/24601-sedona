@@ -90,13 +90,21 @@
             <p class="results-found">Найдено: <span id="hotels-results-value">3</span></p>
             <div class="results-sorter">
               <ul class="sorting-menu">
-                <li>Сортировка:</li>
-                <li><a class="sorting-menu-item" href="#" title="Сортировать по цене">По цене</a></li>
-                <li><a class="sorting-menu-item" href="#" title="Сортировать по типу">По типу</a></li>
-                <li><a class="sorting-menu-item" href="#" title="Сортировать по функционалу">По функционалу</a></li>
+                <li class="sorting-menu-item">Сортировка:</li>
+                <li class="sorting-menu-item">
+                  <a class="sorting-menu-link is-active" href="#" title="Сортировать по цене">По цене</a>
+                </li>
+                <li class="sorting-menu-item">
+                  <a class="sorting-menu-link" href="#" title="Сортировать по типу">По типу</a>
+                </li>
+                <li class="sorting-menu-item">
+                  <a class="sorting-menu-link" href="#" title="Сортировать по функционалу">По функционалу</a>
+                </li>
               </ul>
-              <a class="btn btn-sort btn-sort-up" href="#" title="Сортировать вверх">Вверх</a>
-              <a class="btn btn-sort btn-sort-down btn-active" href="#" title="Сортировать вниз">Вниз</a>
+              <div class="sorting-arrows">
+                <a class="btn btn-sort btn-sort-up" href="#" title="Сортировать вверх">Вверх</a>
+                <a class="btn btn-sort btn-sort-down btn-active" href="#" title="Сортировать вниз">Вниз</a>
+              </div>
             </div>
           </div>
           <div class="hotels-results-output" id="hotels-results-output">

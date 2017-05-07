@@ -837,6 +837,7 @@ body {
 }
 
 .hotels-filter-checkbox-label {
+  cursor: pointer;
   padding-left: 41px;
   position: relative;
 }
@@ -963,8 +964,111 @@ body {
 
 /* *************** Hotels-results *************** */
 .hotels-results-header {
+  align-items: center;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 86px;
+  display: flex;
+  padding: 31px 72px 28px;
+}
+
+.hotels-results-header .results-found {
+  flex: none;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.23809524;
+  margin: 0;
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+
+.hotels-results-header .results-sorter {
+  align-items: center;
+  flex: 1 0 auto;
+  display: flex;
+}
+
+.hotels-results-header .sorting-menu {
+  display: flex;
+  font-size: 12px;
+  line-height: 1.5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.hotels-results-header .sorting-menu-item {
+  margin-right: 33px;
+}
+
+.hotels-results-header .sorting-menu-item:first-child {
+  margin-right: 40px;
+}
+
+.hotels-results-header .sorting-menu-item:last-child {
+  margin-right: 0;
+}
+
+.hotels-results-header .sorting-menu-link {
+  border-bottom: 1px dotted #81b3d2;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.hotels-results-header .sorting-menu-link:hover {
+  color: #81b3d2;
+}
+
+.hotels-results-header .sorting-menu-link:active {
+  border-bottom-color: transparent;
+  color: #000;
+}
+
+.hotels-results-header .sorting-menu-link.is-active {
+  border-bottom-color: transparent;
+  color: #81b3d2;
+  cursor: default;
+  pointer-events: none;
+}
+
+.hotels-results-header .sorting-arrows {
+  font-size: 0;
+  margin-left: auto;
+}
+
+.sorting-arrows .btn-sort {
+  border: 5px solid transparent;
+  display: inline-block;
+  color: #ccc;
+  height: 0;
+  vertical-align: middle;
+  width: 0;
+}
+
+.sorting-arrows .btn-sort:hover {
+  color: #000;
+}
+
+.sorting-arrows .btn-active,
+.sorting-arrows .btn-sort:active {
+  color: #81b3d2;
+}
+
+.sorting-arrows .btn-active {
+  cursor: default;
+  pointer-events: none;
+}
+
+.sorting-arrows .btn-sort.btn-sort-up {
+  border-bottom: 10px solid currentColor;
+  border-right-width: 6px;
+  border-top: 0;
+  margin-right: 10px;
+}
+
+.sorting-arrows .btn-sort.btn-sort-down {
+  border-bottom: 0;
+  border-left-width: 6px;
+  border-top: 10px solid currentColor;
 }
 
 .hotel-item {
