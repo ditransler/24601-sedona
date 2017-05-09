@@ -558,8 +558,17 @@ body {
   padding: 55px;
   position: absolute;
   top: 86px;
+  transition: visibility 0.5s ease-in,
+              opacity 0.5s ease-in;
   width: 100%;
   z-index: 1;
+}
+
+.hotel-search-form-content.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: visibility 0.3s ease-out,
+              opacity 0.3s ease-out;
 }
 
 .hotel-search-form-content .form-group {
