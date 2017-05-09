@@ -741,6 +741,7 @@ body {
 }
 
 .hotel-search-map {
+  background: #a9b8c3 url("../img/map.jpg") no-repeat;
   height: 593px;
   width: 100%;
 }
