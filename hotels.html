@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Гостиницы в Седоне</title>
@@ -32,7 +32,7 @@
       </header>
       <main class="main-content">
         <div class="hotels-filter">
-          <form class="hotels-filter-form" action="/" method="get">
+          <form class="hotels-filter-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="hotels-filter-group infrastructure">
               <legend class="title">Инфраструктура:</legend>
               <ul class="checkbox-list">
@@ -199,5 +199,10 @@
         </section>
       </footer>
     </div>
+    <script>
+      var html = document.documentElement;
+      html.className = html.className.replace('no-js', 'js');
+    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

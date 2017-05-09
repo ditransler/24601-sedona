@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -104,19 +104,19 @@
             <h2 class="hotel-search-form-toggle">
               <button class="btn" id="search-form-toggle" type="button">Поиск гостиницы в Седоне</button>
             </h2>
-            <div class="hotel-search-form-content" id="search-form-container">
-              <form id="hotel-search-form" action="/" method="get">
+            <div class="hotel-search-form-content is-hidden" id="search-form-container">
+              <form id="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
                 <div class="form-group">
                   <label class="label" for="checkin-date">Дата заезда:</label>
                   <div class="datepicker">
-                    <input class="input input-datepicker" id="checkin-date" type="text" placeholder="24 апреля 2017">
+                    <input class="input input-datepicker" id="checkin-date" name="checkin-date" type="text" placeholder="24 апреля 2017">
                     <button class="btn btn-datepicker" type="button">Выбрать дату</button>
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="label" for="checkout-date">Дата выезда:</label>
                   <div class="datepicker">
-                    <input class="input input-datepicker" id="checkout-date" type="text" placeholder="4 июля 2017">
+                    <input class="input input-datepicker" id="checkout-date" name="checkout-date" type="text" placeholder="4 июля 2017">
                     <button class="btn btn-datepicker" type="button">Выбрать дату</button>
                   </div>
                 </div>
@@ -125,7 +125,7 @@
                     <label class="label" for="adults-number">Взрослые:</label>
                     <div class="plus-minus-count">
                       <button class="btn btn-minus" type="button">Минус</button>
-                      <input class="input" id="adults-number" type="text" pattern="[0-9]*" value="2">
+                      <input class="input" id="adults-number" name="adults-number" type="text" pattern="[0-9]*" value="2">
                       <button class="btn btn-plus" type="button">Плюс</button>
                     </div>
                   </div>
@@ -133,7 +133,7 @@
                     <label class="label" for="children-number">Дети:</label>
                     <div class="plus-minus-count">
                       <button class="btn btn-minus" type="button">Минус</button>
-                      <input class="input" id="children-number" type="text" pattern="[0-9]*" value="0">
+                      <input class="input" id="children-number" name="children-number" type="text" pattern="[0-9]*" value="0">
                       <button class="btn btn-plus" type="button">Плюс</button>
                     </div>
                   </div>
@@ -162,6 +162,10 @@
         </section>
       </footer>
     </div>
+    <script>
+      var html = document.documentElement;
+      html.className = html.className.replace('no-js', 'js');
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
