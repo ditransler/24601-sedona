@@ -5,12 +5,12 @@
         hidden: 'is-hidden'
       };
 
-  searchFormContainer.classList.add(states.hidden);
+  if (searchFormToggleBtn !== null && searchFormContainer !== null) {
+    searchFormToggleBtn.addEventListener('click', function(evt) {
+      evt.preventDefault();
 
-  searchFormToggleBtn.addEventListener('click', function(evt) {
-    evt.preventDefault();
-
-    searchFormContainer.classList.toggle(states.hidden);
-  });
+      searchFormContainer.classList.toggle(states.hidden);
+    });
+  }
 
 })(window, document, window.SedonaSite || {});
